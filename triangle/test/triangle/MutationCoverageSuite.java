@@ -7,7 +7,7 @@ import static triangle.Triangle.Type;
 import static triangle.Triangle.Type.*;
 
 /**
- * Test Suite for the Statement Coverage.
+ * Test Suite for the Mutation Coverage.
  */
 public class MutationCoverageSuite {
 
@@ -31,7 +31,7 @@ public class MutationCoverageSuite {
         Type expected = INVALID;
         assertEquals(actual, expected);
     }
-    
+
     @Test
     public void testNegativeSideTriangle1() {
         Type actual = Triangle.classify(-1, 10, 10);
@@ -171,14 +171,14 @@ public class MutationCoverageSuite {
         Type expected = ISOSCELES;
         assertEquals(actual, expected);
     }
-    
+
     @Test
     public void testMutant2() {
         Type actual = Triangle.classify(2, 1, 2);
         Type expected = ISOSCELES;
         assertEquals(actual, expected);
     }
-    
+
     @Test
     public void testMutant3() {
         Type actual = Triangle.classify(2, 2, 1);
